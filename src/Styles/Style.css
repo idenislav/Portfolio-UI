@@ -1,21 +1,18 @@
 #navwords {
-    padding: 70px;
-    font-size: 1.2em;
+    padding: 20px;
+    margin: 30px;
+    font-size: 1em;
     color: rgba(128, 0, 128, 0.755);
     text-decoration: none;
     font-family: sans-serif;
-    
-    
+ 
 }
 
-/* body { 
-  background-image: url(../Styles/pics/SaltFlats.JPG);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+#container {
+    text-align: center;
+    margin-top: 30px;
+}
 
-
-} */
 
 
 

@@ -8,6 +8,8 @@ class AboutMe extends Component {
          <div id="aboutMePic">
              
          </div>
+
+        
          
      )
  }

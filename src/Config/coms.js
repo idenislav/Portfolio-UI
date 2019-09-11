@@ -1,0 +1,1 @@
+export const LIST_API = process.env.REACT_APP_LIST_API || "http://localhost:3000"

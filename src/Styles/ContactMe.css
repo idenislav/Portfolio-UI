@@ -1,3 +1,7 @@
+body {
+    background-color: lightblue;
+}
+
 #ContactForm {
     display: flex;
     flex-direction: column;
@@ -14,6 +18,7 @@
     margin-bottom: 100px;
 }
 
+ 
 input {
     border-radius: 2px;
     background-color: lightblue;
@@ -21,7 +26,6 @@ input {
     border: none;
     width: 550px;
     height: 35px;
-    
 }
  .flexbox {
      display: flex;

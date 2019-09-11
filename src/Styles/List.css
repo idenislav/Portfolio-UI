@@ -1,0 +1,47 @@
+h1 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#Listitem {
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: 1px solid black;
+    
+}
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left:30px;
+    margin-top: -10px;
+}
+.deleteBut {
+    border-radius: 5px;
+}
+
+.margin {
+     margin-right: 20px; 
+     margin-bottom: 5px;  
+}
+
+.Last {
+    margin-left: 10px;
+}
+.Email {
+    margin-left: 45px;
+}
+.Phone {
+    margin-left: 35px;
+}
+.Address {
+    margin-left: 35px;
+}
+.Message {
+    margin-left: 40px;
+}
+

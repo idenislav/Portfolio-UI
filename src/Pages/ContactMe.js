@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "../Styles/ContactMe.css";
+import {LIST_API} from '../Config/coms';
 
 class ContactMe extends Component {
     state = {
@@ -17,7 +18,8 @@ class ContactMe extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        fetch("http://localhost:3000/", {
+        console.log(this.state);
+        fetch(`${LIST_API}`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -25,7 +27,12 @@ class ContactMe extends Component {
             body: JSON.stringify(this.state)
         })
         .then(console.log(this.state))
+        (window.location.reload(false))
+
     }
+
+    
+    
 
     render() {
         return(
@@ -38,7 +45,7 @@ class ContactMe extends Component {
                     <input name='address' placeholder='address' onChange={this.handleChange}/>
                     <textarea name='message' id="message" placeholder='Comments ...' onChange={this.handleChange}></textarea>
 
-                    <button>Submit </button>
+                    <button>Submit</button>
                 </form>
             </div>
         )
