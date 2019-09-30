@@ -6,6 +6,8 @@ import '../Styles/List.css';
 class Listitem extends Component {
 
     constructor(props) {
+      //When implementing the constructor function inside a React component, super()
+      //is a requirement.
         super(props);
          this.state = {
              id: this.props.item._id,
@@ -18,29 +20,28 @@ class Listitem extends Component {
          }
     }
 
-    updateData = (e) => {
-        e.prevent.default();
-        
-        fetch(`${LIST_API}/List/${this.props.id}`, {
-          method: "PUT",
-          body: JSON.stringify(),
-          headers: {
-            'Content-Type': 'application/json'
-          }
-        })  
-      }
+    // updateData = (e) => {
+    //     e.prevent.default();
+    //     fetch(`${LIST_API}/List/${this.props.id}`, {
+    //       method: "PUT",
+    //       body: JSON.stringify(),
+    //       headers: {
+    //         'Content-Type': 'application/json'
+    //       }
+    //     })  
+    //   }
 
       deleteData = () => { 
-          fetch(`${LIST_API}/List/${this.state.id}`, {
+          fetch(`${LIST_API}/List/${this.props.item._id}`, {
           method: "DELETE",
           headers: {
             'Content-Type': 'application/json'
           }
-        }).then(this.refresh())
+        }).then(this.props.reload())
       }
-      refresh() {
-          document.location.reload(true);
-      }
+      // refresh() {
+      //     document.location.reload(true);
+      // }
     
 
     render() {
@@ -53,6 +54,8 @@ class Listitem extends Component {
                 <div className='Address'>{this.props.item.address}</div>
                 <div className='Message'>{this.props.item.message}</div>
                 <div  className='buttons'>
+                  {/* let's investigate why we can't 
+                pass props into the item, but work when we pass state */}
                 <div><ListModal reload={this.props.reload} item={this.state}/></div>
                 <button className='deleteBut' onClick={this.deleteData}>Delete</button>
                 </div>

@@ -1,6 +1,3 @@
-body {
-    background-color: lightblue;
-}
 
 #ContactForm {
     display: flex;
@@ -18,7 +15,6 @@ body {
     margin-bottom: 100px;
 }
 
- 
 input {
     border-radius: 2px;
     background-color: lightblue;
@@ -27,12 +23,13 @@ input {
     width: 550px;
     height: 35px;
 }
- .flexbox {
+.flexbox {
      display: flex;
      align-items: flex-start;
  }
 #message {
     background-color: lightblue;
+    border-radius: 3px;
     margin-top: 20px;
     width: 550px;
     vertical-align: top;
@@ -43,5 +40,6 @@ input {
 button {
  width: 50px;
  margin-top: 10px;
+ border-radius: 2px;
 }
 

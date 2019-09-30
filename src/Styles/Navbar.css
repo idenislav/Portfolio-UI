@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Cookie&display=swap");
+
+#navwords {
+    padding: 20px;
+    margin: 30px;
+    font-size: 1em;
+    color: gray;
+    font-family: sans-serif;
+
+}
+
+#container {
+    background-image: url("../Styles/pics/BlurrCode.jpg");
+    height: 200px;
+    width: 1305px;
+    text-align: center;
+    padding: 20px;
+    margin: -10px;   
+}
+
+.myName {
+    left: 50%;
+    font-size: 40px;
+    font-family: Cookie;
+    border-bottom: 1px white solid;
+    color: white;
+     
+}
+.APD {
+    color: white;
+    font-family: Cookie;
+    font-size: 20px;
+    position: relative;
+    bottom: 25px;   
+}
+
+
+
+
+
+
+
+

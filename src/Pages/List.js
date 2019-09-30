@@ -12,7 +12,8 @@ class List extends Component {
     fetchData = () => {
         fetch(`${LIST_API}/List`) 
         .then(response => {return response.json()})
-        .then(data => data.map(data => <Listitem reload={this.fetchData} item = {data}/>))
+        .then(data => data.map(data => <Listitem key={data._id} 
+            reload={this.fetchData} item = {data}/>))
         .then(info => {
             this.setState({info: info})
         })

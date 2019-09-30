@@ -15,11 +15,11 @@ const customStyles = {
 };
 
 // Modal.setAppElement("#root");
-
+// Rather that using deconstruction when importing React
+// i access the Component like i access the property of an object.
 class ListModal extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       modalIsOpen: false,
       id: this.props.item.id,
@@ -69,8 +69,7 @@ class ListModal extends React.Component {
     .then(() => this.props.reload())
   }
 
-  render() {
-      
+  render() {  
     return (
       <div>
         <button className='deleteBut' onClick={this.toggleModal}>Update</button>

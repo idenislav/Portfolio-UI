@@ -1,0 +1,27 @@
+
+.topCover {
+    width: 1310px;
+    height: 200px;
+}
+
+.iconFlex {
+    display: flex;
+}
+
+.linkedInLogo {
+    background-image: url('../Styles/pics/linkedInLogo.png');
+    background-size: cover;
+    margin-left: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+}
+.githubLogo {
+    background-image: url('../Styles/pics/githubLogo.png');
+    
+    margin-left: 20px;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+}

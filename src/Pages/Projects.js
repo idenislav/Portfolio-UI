@@ -4,7 +4,8 @@ class Projects extends Component {
     render() {
         return(
             <div>
-                test
+                in progress ...
+                
             </div>
         )
     }
