@@ -6,8 +6,10 @@ class HomePic extends Component {
     render() { 
         return(
             <div id="Pic">
-
+                
             </div>
+            
+           
         )
     }
 

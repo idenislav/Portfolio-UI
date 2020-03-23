@@ -1,12 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Cookie&display=swap");
 
-#navwords {
+.navwords {
     padding: 20px;
-    margin: 30px;
+    margin-left: 50px;
     font-size: 1em;
     color: gray;
     font-family: sans-serif;
 
+}
+
+#resume {
+    position: fixed;
+    left: 90%;
+
+}
+
+.navContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #container {
@@ -14,12 +26,13 @@
     height: 200px;
     width: 100%;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     margin: -10px;   
 }
 
 .myName {
-    left: 50%;
+    position: relative;
+    
     font-size: 40px;
     font-family: Cookie;
     border-bottom: 1px white solid;

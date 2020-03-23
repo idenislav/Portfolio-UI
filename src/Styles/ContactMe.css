@@ -1,3 +1,6 @@
+.backGround {
+    background-color: gray;
+}
 
 #ContactForm {
     display: flex;

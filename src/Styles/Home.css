@@ -4,10 +4,12 @@
     height: 200px;
 }
 
-.iconFlex {
+.iconsFlex {
     display: flex;
+    position: relative;
+    padding-top: 20px;
+    z-index: 1;
 }
-
 .linkedInLogo {
     background-image: url('../Styles/pics/linkedInLogo.png');
     background-size: cover;
@@ -15,13 +17,32 @@
     height: 50px;
     width: 50px;
     border-radius: 5px;
+    
 }
 .githubLogo {
     background-image: url('../Styles/pics/githubLogo.png');
-    
     margin-left: 20px;
     background-size: cover;
     height: 50px;
     width: 50px;
     border-radius: 5px;
+   
+}
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0px;
+    width: 100%;
+    z-index: 0;
+
+}
+.videowrapper iframe {
+    position: absolute;
+    padding-top: 10px;
+    left: 0px;
+    top: 0px;
+    right:  0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
 }

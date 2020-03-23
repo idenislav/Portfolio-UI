@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "../Styles/ContactMe.css";
 import {LIST_API} from '../Config/coms';
-import * as emailjs from 'emailjs-com'
+ import * as emailjs from 'emailjs-com'
 
 class ContactMe extends Component {
     state = {
@@ -18,9 +18,9 @@ class ContactMe extends Component {
         this.setState({[target.name]: target.value})
     }
     
-    handleSubmit = (e) => {
+    handleSubmit = async (e) => {
         e.preventDefault();
-            fetch(`${LIST_API}`, {
+            await fetch(`${LIST_API}/`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -41,8 +41,8 @@ class ContactMe extends Component {
 
     render() {
         return(
-            <div>
-                <div className="backGround" />
+            <div className="backGround">
+                
                 <form id="ContactForm" onSubmit={this.handleSubmit}>
                     <input name='firstName' placeholder='First name' onChange={this.handleChange}/>
                     <input name='lastName' placeholder='Last name' onChange={this.handleChange}/>

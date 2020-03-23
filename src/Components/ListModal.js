@@ -86,6 +86,7 @@ class ListModal extends React.Component {
             <input name='email' value={this.state.email} placeholder='email' onChange={this.handleChange} />
             <input name='phone' value={this.state.phone} placeholder='phone' onChange={this.handleChange} />
             <input name='address' value={this.state.address} placeholder='address' onChange={this.handleChange} />
+            <textarea className='message' name='message' value={this.state.message} placeholder='Comments...' onChange={this.handleChange} />
 
             <button onClick={this.toggleModal}>Close</button>
             <button onClick={this.handleClick}>Update</button>
